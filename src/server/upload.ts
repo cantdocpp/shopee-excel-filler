@@ -11,6 +11,7 @@ cloudinary.config({
 const upload = (file: string): Promise<any> => {
   console.log('uploading...');
   const publicPath = path.resolve(__dirname, '../../../public/images', file);
+  if (publicPath.includes('.DS_Store')) return;
   return new Promise((resolve, reject) => {
     cloudinary.uploader.upload(publicPath, {
       use_filename: true,

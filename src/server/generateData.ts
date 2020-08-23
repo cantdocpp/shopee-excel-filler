@@ -23,8 +23,9 @@ const getPrice = (size: string = 'M'): number => {
 /* eslint-disable */
 
 const generateData = (productType: string, size: string, code: string): GenerateData => {
+  const codeWithoutExtension = code.slice(0, -4);
   const data = {
-    title: `Kaos distro pria ${productType} T-Shirt casual lengan pendek bahan katun ${code}`,
+    title: `Kaos distro pria ${productType} T-Shirt casual lengan pendek bahan katun ${codeWithoutExtension}`,
     /* eslint-disable */
     description: 'Tersedia warna navy, hitam, putih, maroon\n' +
                 '\n' +
