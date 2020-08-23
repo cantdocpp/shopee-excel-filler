@@ -1,7 +1,7 @@
 # shopee-excel-filler
 Shopee excel mass update filler
 
-# Installation Gudie
+# Installation Guide
 - You need to have [NPM](https://nodejs.org/en/) installed on your local machine.
 - Clone this repository.
 - Get into this repository through terminal.
